@@ -9,7 +9,7 @@ Major changes:
 * ordering of front- and backmatter
 * include Proefschrift, CV, and dutch summary in the back of document
 
-The complied thesis can be found at [ClassicThesis.pdf](https://www.dropbox.com/s/no538uhyfsnzo7d/ClassicThesis.pdf).
+The complied thesis can be found at [ClassicThesis.pdf](https://www.dropbox.com/s/no538uhyfsnzo7d/ClassicThesis.pdf?dl=1).
 
 If you have any questions, do not hesitate to contact me under [C.B.M.Horig@uu.nl](mailto:C.B.M.Horig@uu.nl).
 
