@@ -71,22 +71,26 @@
 \include{FrontBackmatter/DirtyTitlepage}
 \include{FrontBackmatter/Titlepage}
 \include{FrontBackmatter/Titleback}
-\cleardoublepage\include{FrontBackmatter/Dedication}
+% \cleardoublepage\include{FrontBackmatter/Dedication}
 %\cleardoublepage\include{FrontBackmatter/Foreword}
-\cleardoublepage\include{FrontBackmatter/Abstract}
-\cleardoublepage\include{FrontBackmatter/Publication}
-\cleardoublepage\include{FrontBackmatter/Acknowledgments}
+% \cleardoublepage\include{FrontBackmatter/Abstract}
+\cleardoublepage\include{FrontBackmatter/Proefschrift}
+\include{FrontBackmatter/Proefschriftback}
+%\cleardoublepage\include{FrontBackmatter/Foreword}
+% \cleardoublepage\include{FrontBackmatter/Acknowledgments}
 \pagestyle{scrheadings}
 \cleardoublepage\include{FrontBackmatter/Contents}
+\cleardoublepage\include{FrontBackmatter/Publication}
 %********************************************************************
 % Mainmatter
 %*******************************************************
 \pagenumbering{arabic}
+\setcounter{page}{0}
 %\setcounter{page}{90}
 % use \cleardoublepage here to avoid problems with pdfbookmark
 \cleardoublepage
 \part{Some Kind of Manual}
-\include{Chapters/Chapter01}
+\acresetall\include{Chapters/Chapter01}
 \cleardoublepage
 \ctparttext{You can put some informational part preamble text here. 
 Illo principalmente su nos. Non message \emph{occidental} angloromanic
@@ -95,23 +99,29 @@ se avantiate publicationes via. Pan in terra summarios, capital
 interlingua se que. Al via multo esser specimen, campo responder que
 da. Le usate medical addresses pro, europa origine sanctificate nos se.}
 \part{The Showcase}
-\include{Chapters/Chapter02}
+\acresetall\include{Chapters/Chapter02}
 %\addtocontents{toc}{\protect\clearpage} % <--- just debug stuff, ignore
-\include{Chapters/Chapter03}
+\acresetall\include{Chapters/Chapter03}
 %\include{multiToC} % <--- just debug stuff, ignore for your documents
 % ********************************************************************
 % Backmatter
 %*******************************************************
 \appendix
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}% dot show sections in toc
+\addtocontents{lof}{\protect\setcounter{tocdepth}{0}}% dot show figures in toc
+\addtocontents{lot}{\protect\setcounter{tocdepth}{0}}% dot show tables in toc
 \cleardoublepage
 \part{Appendix}
 \include{Chapters/Chapter0A}
 %********************************************************************
 % Other Stuff in the Back
 %*******************************************************
+\acresetall\cleardoublepage\include{FrontBackmatter/Summary}
+\cleardoublepage\include{FrontBackmatter/Acknowledgments}
+\cleardoublepage\include{FrontBackmatter/CV}
 \cleardoublepage\include{FrontBackmatter/Bibliography}
 \cleardoublepage\include{FrontBackmatter/Colophon}
-\cleardoublepage\include{FrontBackmatter/Declaration}
+% \cleardoublepage\include{FrontBackmatter/Declaration}
 % ********************************************************************
 % Game Over: Restore, Restart, or Quit?
 %*******************************************************
