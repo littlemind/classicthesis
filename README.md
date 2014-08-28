@@ -5,8 +5,8 @@ This is a modified version of [Classic Thesis by André Miede](http://www.miede.
 For my thesis in Utrecht, the Netherlands, I adopted André Miede's version for the booklet constrains required at Utrecht University (size: 17 cm x 24 cm). Therefore, margins and text-layout had to be altered, discharging the typographic guidelines used in the original template. In addition, the outline of front- and backmatter is changed to convey a more common outline used in various theses at Utrecht University.
 
 Major changes:
-* size changed to height 17 cm x 24 cm (width x height)
-* ordering of front- and backmatter
+* size changed to 17 cm x 24 cm (width x height)
+* arrangement of front- and backmatter
 * include Proefschrift, CV, and dutch summary in the back of document
 
 The complied thesis can be found at [ClassicThesis.pdf](https://www.dropbox.com/s/no538uhyfsnzo7d/ClassicThesis.pdf?dl=1).
